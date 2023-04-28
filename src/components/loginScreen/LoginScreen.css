@@ -1,0 +1,219 @@
+.loginScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.loginScreen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+    background-color: white;
+}
+.loginScreen__container-left {
+   display: flex;
+   width: 50%;
+   height: 80vh;
+}
+.loginScreen__container-right {
+    display: flex;
+    width: 50%;
+    height: 80vh;
+    flex-direction: column;
+}
+.loginScreen__form-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.logo {
+    height: 200px;
+    width: 500px;
+}
+.loginScreen__logo-container {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+}
+
+.loginScreen__form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 250px;
+}
+
+.email-container > input {
+    width: 300px;
+    padding: 22px 15px;
+    border: none;
+    background-color: #dfe6f9;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.password-container > input {
+    width: 300px;
+    padding: 22px 15px;
+    border: none;
+    background-color: #dfe6f9;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+/* copied code from gpt*/
+.loginScreen__form-container {
+    margin-top: 10px;
+    margin-left: 140px;
+    width: 100%;
+    height: 400px;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  .form-group > input {
+    padding: 22px 15px;
+    background-color: #dfe6f9;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  .loginScreen__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .loginScreen__label {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .loginScreen__input {
+    margin-bottom: 10px;
+    
+  }
+
+  
+  .loginScreen__signIn-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0062cc;
+  }
+
+
+
+  /* copied code for the input fields from chat gpt*/
+.email-box{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  color: black;
+}
+
+.email-box::placeholder{
+  color: black;
+  font-family: poppins;
+  font-size: 1.1rem;
+}
+.password-box {
+    width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  color: #333;
+}
+.password-box::placeholder {
+    color: black;
+    font-family: poppins;
+    font-size: 1.1rem;
+}
+
+.form-group > input {
+    background-color: white;
+    border-bottom: 3px solid black;
+}
+
+.forgot-password {
+  margin-top: 10px;
+}
+
+.forgot-password > a {
+  font-family: poppins;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 10px;
+  font-weight: bold;
+}
+.button {
+  width: 300px;
+  border-radius: 60px;
+}
+
+
+
+/* responsive___________________________________*/
+
+@media screen and (max-width:550) {
+  .loginScreen__container-left {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:700px) {
+    .loginScreen__container-left {
+      display: none;
+    }
+    .loginScreen__container-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .loginScreen__form-container {
+      padding-right: 130px;
+      gap: 35px;
+      width: 100%;
+    }
+    .form-group{
+     padding: 10px 10px;
+     width: 300px;
+    }
+    h2{
+      margin-right: 10px;
+    }
+    .password-box {
+      width: 300px;
+    }
+}
